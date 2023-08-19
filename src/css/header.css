@@ -1,0 +1,272 @@
+.js-flax {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: auto;
+  border: 1px solid var(--black);
+  border-radius: 0 0 8px 8px;
+  padding: 18px 0;
+  margin-bottom: 40px;
+  z-index: 2;
+  position: relative;
+  background-color: var(--white);
+}
+
+.heade-logo {
+  display: flex;
+}
+.btn-theme {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.btn-user-menu-header {
+  display: none;
+}
+.img-switcher-lith {
+  display: block;
+}
+
+.img-switcher-black {
+  display: none;
+  /* display: block; */
+}
+
+.theme {
+  display: flex;
+}
+
+.mobe-menu-open {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobe-menu-open:hover svg {
+  stroke: rgba(79, 46, 232, 1);
+}
+.mobe-menu-open:focus svg {
+  stroke: rgba(79, 46, 232, 1);
+}
+
+.mobe-menu-close:hover svg {
+  stroke: rgba(79, 46, 232, 1);
+}
+.mobe-menu-close:focus svg {
+  stroke: rgba(79, 46, 232, 1);
+}
+.mobe-menu-svg {
+  stroke: var(--black);
+}
+
+.mobe-menu-close {
+  background-color: var(--white);
+  border: none;
+  display: none;
+}
+
+.header-container {
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: none;
+}
+
+.container-rith-btn {
+  gap: 14px;
+}
+
+.btn-user-help {
+  display: none;
+}
+/* .btn-user {
+  display: none;
+} */
+
+.img-switcher {
+  width: 40px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-rith-btn {
+    position: relative;
+  }
+
+  .btn-user-menu-header {
+    background-color: var(--white);
+    /* width: 118px; */
+    height: 48px;
+    border-radius: 18px;
+    border: 1.5px solid var(--black);
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+  }
+
+  .btn-user-help {
+    display: flex;
+
+    width: 184px;
+    height: 48px;
+    border-radius: 18px;
+    padding: 0 14px;
+    align-items: center;
+
+    justify-content: space-between;
+    flex-shrink: 0;
+    background-color: var(--violet);
+  }
+  .header {
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+  .header-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  /* .btn-user.btn-user-help {
+    
+    height: 45px;
+    
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    position: static;
+  } */
+
+  .btn-user-text {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+  }
+
+  .iconUser {
+    fill: var(--white);
+  }
+
+  .textuserName {
+    color: var(--white);
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: -0.44px;
+  }
+
+  .mobe-menu-open {
+    display: none;
+  }
+
+  .mode-menu-close {
+    display: none;
+  }
+  .mobe-menu-close.helper {
+    display: none;
+  }
+  /* .mobe-menu-open{
+    display: none;
+  } */
+  .header-link-home {
+    width: 72px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-page-home {
+    color: var(--black);
+    font-size: 14px;
+
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
+
+  .header-page-home:focus {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .header-page-home:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .header-link-shoping {
+    padding: 7px 16px;
+    justify-content: center;
+
+    align-items: flex-end;
+    gap: 8px;
+    background-color: inherit;
+    border-radius: 36px;
+    display: none;
+  }
+
+  .iconify {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hedear-nav {
+    gap: 40px;
+  }
+
+  .header-page-shop {
+    line-height: 1.28;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
+
+  .header-page-shop:focus {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .header-page-shop:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .container-rith-btn {
+    gap: 24px;
+  }
+
+  .bakdrop-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hedear-nav {
+    gap: 76px;
+  }
+
+  .header-list {
+    gap: 24px;
+  }
+}
+
+.active {
+  border-radius: 36px;
+  background: var(--yellow);
+  padding: 8px 16px;
+}
